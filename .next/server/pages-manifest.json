@@ -1,0 +1,15 @@
+{
+  "/_app": "pages/_app.js",
+  "/_document": "pages/_document.js",
+  "/404": "pages/404.html",
+  "/api/hello": "pages/api/hello.js",
+  "/components": "pages/components.html",
+  "/": "pages/index.html",
+  "/render/csr": "pages/render/csr.html",
+  "/time": "pages/time.html",
+  "/render/isr": "pages/render/isr.js",
+  "/_error": "pages/_error.js",
+  "/render/ssr": "pages/render/ssr.js",
+  "/render/isr-20": "pages/render/isr-20.js",
+  "/render/ssg": "pages/render/ssg.js"
+}
