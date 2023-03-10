@@ -6,6 +6,9 @@
       "statusCode": 404
     }
   ],
+    "platform": {
+    "apiRuntime": "node:16"
+  },
   "globalHeaders": {
     "content-security-policy": "default-src https: 'unsafe-eval' 'unsafe-inline'; object-src 'none'",
     "x-blah-blah":"value-blah"
