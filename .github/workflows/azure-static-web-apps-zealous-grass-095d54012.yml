@@ -18,9 +18,11 @@ jobs:
       - uses: actions/checkout@v3
         with:
           submodules: true
+      - name: Copy Build Folder
+        run: mv .next buildOutput
       - name: Build And Deploy
         id: builddeploy
-        uses: sarsharma/staticstiesactionoryx@master
+        uses: sarsharma/staticstiesactionoryx@private
         with:
           azure_static_web_apps_api_token: ${{ secrets.AZURE_STATIC_WEB_APPS_API_TOKEN_ZEALOUS_GRASS_095D54012 }}
           repo_token: ${{ secrets.GITHUB_TOKEN }} # Used for Github integrations (i.e. PR comments)
@@ -29,7 +31,7 @@ jobs:
           # For more information regarding Static Web App workflow configurations, please visit: https://aka.ms/swaworkflowconfig
           app_location: "/" # App source code path
           api_location: "" # Api source code path - optional
-          output_location: "" # Built app content directory - optional
+          output_location: "buildOutput" # Built app content directory - optional
           skip_app_build: "true"
           ###### End of Repository/Build Configurations ######
 
@@ -40,7 +42,7 @@ jobs:
     steps:
       - name: Close Pull Request
         id: closepullrequest
-        uses: sarsharma/staticstiesactionoryx@master
+        uses: sarsharma/staticstiesactionoryx@private
         with:
           azure_static_web_apps_api_token: ${{ secrets.AZURE_STATIC_WEB_APPS_API_TOKEN_ZEALOUS_GRASS_095D54012 }}
           action: "close"
