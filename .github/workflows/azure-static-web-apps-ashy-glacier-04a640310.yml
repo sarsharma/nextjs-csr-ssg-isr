@@ -21,6 +21,8 @@ jobs:
       - name: Build
         run:  |
           npm install && npx next build
+          rm -r node_modules
+          npm install --production
       - name: Deploy
         id: builddeploy
         uses: sarsharma/staticstiesactionoryx@master
