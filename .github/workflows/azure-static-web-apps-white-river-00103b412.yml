@@ -24,6 +24,7 @@ jobs:
           npm install && npx next build
           rm -r node_modules
           npm install --production
+          mv .next outputFolder
       - name: Deploy
         id: builddeploy
         uses: sarsharma/staticstiesactionoryx@master
@@ -35,7 +36,7 @@ jobs:
           # For more information regarding Static Web App workflow configurations, please visit: https://aka.ms/swaworkflowconfig
           app_location: "/" # App source code path
           api_location: "" # Api source code path - optional
-          output_location: "" # Built app content directory - optional
+          output_location: "outputFolder" # Built app content directory - optional
           skip_app_build: true
           skip_api_build: true
           ###### End of Repository/Build Configurations ######
