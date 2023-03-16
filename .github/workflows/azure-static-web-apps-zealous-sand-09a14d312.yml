@@ -21,7 +21,6 @@ jobs:
       - name: Build
         run: |
           npm install && npx next build
-          mv .next outputFolder
       - name: Deploy
         id: builddeploy
         uses: sarsharma/staticstiesactionoryx@master
