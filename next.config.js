@@ -1,8 +1,8 @@
 module.exports = {
   eslint: {
     dirs: ['src'],
-    distDir: 'outputFolder'
   },
+  distDir: 'outputFolder',
   experimental: {
     // Defaults to 50MB
     isrMemoryCacheSize: 0,
