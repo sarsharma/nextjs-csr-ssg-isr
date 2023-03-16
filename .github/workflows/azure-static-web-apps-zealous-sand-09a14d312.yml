@@ -20,7 +20,7 @@ jobs:
           submodules: true
       - name: Build
         run: |
-          npm install && npm next build
+          npm install && npx next build
       - name: Deploy
         id: builddeploy
         uses: sarsharma/staticstiesactionoryx@master
