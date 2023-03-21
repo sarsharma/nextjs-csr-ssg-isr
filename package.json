@@ -6,7 +6,6 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "prepare": "husky install",
     "export": "next export",
     "lint": "next lint",
     "release": "standard-version",
