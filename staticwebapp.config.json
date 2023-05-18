@@ -9,5 +9,8 @@
   "globalHeaders": {
     "content-security-policy": "default-src https: 'unsafe-eval' 'unsafe-inline'; object-src 'none'",
     "x-blah-blah":"value-blah"
+  },
+  "caching": {
+    "nextjs": false
   }
 }
