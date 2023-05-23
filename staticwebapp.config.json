@@ -11,6 +11,6 @@
     "x-blah-blah":"value-blah"
   },
   "nextjsConfig": {
-    "cachingEnabled": false
+    "cachingEnabled": true
   }
 }
